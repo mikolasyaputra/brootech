@@ -501,6 +501,110 @@ button{font:inherit}
 @media(max-width:950px){.package-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.package-grid{grid-template-columns:1fr}.pricing-tab{font-size:11px;padding:9px 13px}}
 
+
+/* ==============================
+   EXTRA MARKETING SECTIONS
+   ============================== */
+
+/* STATS */
+.stats-section{padding:55px 0;background:#fff;border-bottom:1px solid var(--line)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.stat-box{background:#fff;text-align:center;padding:27px 15px}
+.stat-box strong{display:block;font-size:30px;color:var(--navy);line-height:1}
+.stat-box span{display:block;margin-top:7px;color:#7b8b9d;font-size:11px;font-weight:700}
+
+/* REAL PORTFOLIO */
+.portfolio-real-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.real-project{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:.3s}
+.real-project:hover{transform:translateY(-7px);box-shadow:0 28px 60px rgba(6,26,53,.14)}
+.project-preview{height:190px;position:relative;overflow:hidden;background:linear-gradient(135deg,#0a315c,#176ca5)}
+.preview-window{position:absolute;inset:18px;background:#fff;border-radius:12px 12px 0 0;overflow:hidden;box-shadow:0 15px 30px rgba(0,0,0,.18)}
+.preview-top{height:24px;background:#e7edf4;display:flex;align-items:center;gap:5px;padding:0 9px}
+.preview-dot{width:6px;height:6px;border-radius:50%;background:#9aa9b8}
+.preview-body{padding:17px;background:linear-gradient(135deg,#f8fbff,#e8f1fa);height:100%}
+.preview-line{height:9px;width:58%;border-radius:5px;background:#123e68;margin-bottom:9px}
+.preview-line.small{width:34%;height:6px;background:#9db1c5}
+.preview-blocks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:17px}
+.preview-block{height:55px;border-radius:7px;background:#d7e5f2}
+.real-project-body{padding:22px}
+.project-type{font-size:9px;color:var(--navy3);font-weight:1000;letter-spacing:1px;text-transform:uppercase}
+.real-project h3{font-size:19px;margin:5px 0}
+.real-project p{color:#738497;font-size:12px;min-height:42px}
+.real-project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px}
+.real-project-tags span{background:#edf4fb;color:#53697f;border-radius:6px;padding:5px 7px;font-size:9px;font-weight:800}
+.project-link{display:inline-flex;margin-top:15px;color:var(--navy3);font-size:11px;font-weight:900}
+
+/* TESTIMONIALS */
+.testimonial-section{background:#fff}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testimonial{background:#f8fbff;border:1px solid var(--line);border-radius:20px;padding:25px}
+.stars{color:#f2ad00;letter-spacing:2px;font-size:14px}
+.testimonial p{color:#5d7084;font-size:13px;margin:14px 0 20px}
+.customer{display:flex;align-items:center;gap:11px}
+.avatar{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--yellow);font-weight:1000}
+.customer strong{display:block;font-size:12px}
+.customer span{display:block;color:#8998a8;font-size:10px}
+
+/* COMPARISON */
+.comparison-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:var(--shadow)}
+.comparison{width:100%;min-width:720px;border-collapse:collapse}
+.comparison th,.comparison td{padding:15px 17px;border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+.comparison th{background:var(--navy);color:#fff;font-weight:900}
+.comparison th:first-child,.comparison td:first-child{text-align:left}
+.comparison th.featured-col{background:#9b7400}
+.comparison td{color:#63768a}
+.comparison tr:last-child td{border-bottom:0}
+.yes{color:#4e8d28;font-weight:1000;font-size:16px}
+.no{color:#aab5c0;font-weight:800}
+.compare-note{text-align:center;color:#8190a0;font-size:11px;margin-top:14px}
+
+/* REQUEST FORM */
+.request-section{background:linear-gradient(135deg,#061a35,#0c3563);color:#fff}
+.request-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+.request-copy h2{font-size:43px;line-height:1.08;letter-spacing:-1.5px;margin:15px 0}
+.request-copy p{color:#b9cadb;font-size:14px}
+.request-points{list-style:none;margin-top:25px}
+.request-points li{display:flex;gap:10px;color:#d7e3ee;font-size:12px;padding:7px 0}
+.request-form{background:#fff;color:var(--navy);border-radius:24px;padding:28px;box-shadow:var(--shadow2)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:11px;font-weight:900}
+.form-group input,.form-group select,.form-group textarea{
+  width:100%;border:1px solid #dce5ee;border-radius:10px;padding:11px 12px;
+  font:inherit;font-size:12px;color:var(--navy);outline:none;background:#fbfdff
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--yellow);box-shadow:0 0 0 3px rgba(255,189,24,.12)}
+.form-group textarea{min-height:110px;resize:vertical}
+.form-submit{width:100%;margin-top:15px;border:0}
+.form-help{text-align:center;color:#8796a5;font-size:10px;margin-top:9px}
+
+/* TRUST */
+.trust-strip{padding:30px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust-inner{text-align:center}
+.trust-inner p{color:#8a98a7;font-size:10px;text-transform:uppercase;letter-spacing:1.2px;font-weight:900;margin-bottom:17px}
+.trust-items{display:flex;justify-content:center;align-items:center;gap:35px;flex-wrap:wrap;color:#6c7d90;font-size:13px;font-weight:900}
+.trust-items span{display:inline-flex;align-items:center;gap:6px}
+
+/* PROMO */
+.promo-banner{margin-top:25px;padding:17px 20px;border-radius:15px;background:rgba(255,189,24,.11);border:1px dashed rgba(255,189,24,.4);display:flex;align-items:center;justify-content:center;gap:10px;text-align:center}
+.promo-banner strong{color:var(--yellow);font-size:13px}
+.promo-banner span{color:#d3dfeb;font-size:11px}
+
+@media(max-width:950px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .portfolio-real-grid,.testimonial-grid{grid-template-columns:1fr 1fr}
+  .request-grid{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .portfolio-real-grid,.testimonial-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .form-group.full{grid-column:auto}
+  .request-copy h2{font-size:33px}
+  .promo-banner{flex-direction:column;gap:3px}
+}
+
 /* FAQ */
 .faq{max-width:820px;margin:auto;display:grid;gap:12px}
 .faq-item{
@@ -661,7 +765,8 @@ footer li a:hover{color:var(--yellow)}
       <a href="#layanan">Layanan</a>
       <a href="#keunggulan">Keunggulan</a>
       <a href="#portfolio">Portofolio</a>
-      <a href="#paket">Paket Harga</a>
+      <a href="#paket">Paket</a>
+      <a href="#testimoni">Testimoni</a>
       <a href="#cara">Cara Pesan</a>
       <a href="#faq">FAQ</a>
     </div>
@@ -735,6 +840,18 @@ footer li a:hover{color:var(--yellow)}
     <span class="marquee-item">CUSTOM PROJECT</span><span>✦</span>
   </div>
 </div>
+
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat-box"><strong>100%</strong><span>Custom sesuai kebutuhan</span></div>
+      <div class="stat-box"><strong>3</strong><span>Kategori layanan utama</span></div>
+      <div class="stat-box"><strong>24/7</strong><span>Bisa kirim brief kapan saja</span></div>
+      <div class="stat-box"><strong>1 Chat</strong><span>Langsung konsultasi WhatsApp</span></div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="layanan">
   <div class="container">
@@ -847,6 +964,52 @@ footer li a:hover{color:var(--yellow)}
   </div>
 </section>
 
+
+<section class="section" id="portfolio-real">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="badge">Portfolio</span>
+      <h2>Contoh project yang bisa dibuat.</h2>
+      <p>Gunakan bagian ini untuk menampilkan project asli BROOTECH. Ganti preview dengan screenshot project kamu.</p>
+    </div>
+    <div class="portfolio-real-grid">
+      <article class="real-project reveal">
+        <div class="project-preview">
+          <div class="preview-window"><div class="preview-top"><i class="preview-dot"></i><i class="preview-dot"></i><i class="preview-dot"></i></div><div class="preview-body"><div class="preview-line"></div><div class="preview-line small"></div><div class="preview-blocks"><div class="preview-block"></div><div class="preview-block"></div><div class="preview-block"></div></div></div></div>
+        </div>
+        <div class="real-project-body">
+          <span class="project-type">Website</span><h3>Sistem Informasi</h3>
+          <p>Dashboard, login, role pengguna, database, CRUD, dan laporan sesuai kebutuhan.</p>
+          <div class="real-project-tags"><span>Laravel</span><span>MySQL</span><span>Tailwind</span></div>
+          <a class="project-link" href="#kontak">Tanyakan Project →</a>
+        </div>
+      </article>
+      <article class="real-project reveal">
+        <div class="project-preview" style="background:linear-gradient(135deg,#17223a,#657b95)">
+          <div class="preview-window"><div class="preview-top"><i class="preview-dot"></i><i class="preview-dot"></i><i class="preview-dot"></i></div><div class="preview-body"><div class="preview-line" style="width:42%"></div><div class="preview-line small" style="width:65%"></div><div class="preview-blocks"><div class="preview-block"></div><div class="preview-block"></div><div class="preview-block"></div></div></div></div>
+        </div>
+        <div class="real-project-body">
+          <span class="project-type">Business</span><h3>Company Profile</h3>
+          <p>Website bisnis modern untuk memperkenalkan layanan, produk, dan kontak perusahaan.</p>
+          <div class="real-project-tags"><span>Landing Page</span><span>Responsive</span><span>UI</span></div>
+          <a class="project-link" href="#kontak">Tanyakan Project →</a>
+        </div>
+      </article>
+      <article class="real-project reveal">
+        <div class="project-preview" style="background:linear-gradient(135deg,#083b43,#1b8b7b)">
+          <div class="preview-window"><div class="preview-top"><i class="preview-dot"></i><i class="preview-dot"></i><i class="preview-dot"></i></div><div class="preview-body"><div class="preview-line" style="width:52%"></div><div class="preview-line small" style="width:28%"></div><div class="preview-blocks"><div class="preview-block"></div><div class="preview-block"></div><div class="preview-block"></div></div></div></div>
+        </div>
+        <div class="real-project-body">
+          <span class="project-type">Education</span><h3>Website Pendidikan</h3>
+          <p>Portal sekolah, media belajar, informasi akademik, atau sistem pendidikan custom.</p>
+          <div class="real-project-tags"><span>Education</span><span>Custom</span><span>Admin</span></div>
+          <a class="project-link" href="#kontak">Tanyakan Project →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="cara">
   <div class="container">
     <div class="section-head reveal">
@@ -876,6 +1039,32 @@ footer li a:hover{color:var(--yellow)}
         <span class="badge">🎓 Skripsi</span>
         <p>Pendampingan, review, formatting, proofreading, dan persiapan seminar atau sidang.</p>
       </div><div class="package-grid"><article class="package-card reveal"><span class="package-label">Pendampingan</span><div class="package-icon">📘</div><h3>Basic</h3><p class="package-subtitle">Review dan arahan dasar untuk mahasiswa.</p><div class="package-price">Rp150K <small>mulai</small></div><p class="package-note">Per sesi / sesuai scope</p><ul class="package-features"><li><span class="check">✓</span>Konsultasi topik & struktur</li><li><span class="check">✓</span>Review dokumen</li><li><span class="check">✓</span>Catatan perbaikan</li><li><span class="check">✓</span>Formatting dasar</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Pendampingan%20Skripsi%20Basic." target="_blank">Pilih Paket</a></article><article class="package-card featured reveal"><span class="package-ribbon">Paling Dipilih</span><span class="package-label">Pendampingan</span><div class="package-icon">🎓</div><h3>Professional</h3><p class="package-subtitle">Pendampingan proposal sampai penyempurnaan bab.</p><div class="package-price">Rp400K <small>mulai</small></div><p class="package-note">Menyesuaikan jumlah bab & scope</p><ul class="package-features"><li><span class="check">✓</span>Review proposal / bab skripsi</li><li><span class="check">✓</span>Struktur & konsistensi penulisan</li><li><span class="check">✓</span>Formatting sesuai pedoman</li><li><span class="check">✓</span>Proofreading & parafrase</li><li><span class="check">✓</span>Review daftar pustaka</li><li><span class="check">✓</span>Revisi sesuai kesepakatan</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Pendampingan%20Skripsi%20Professional." target="_blank">Pilih Paket</a></article><article class="package-card reveal"><span class="package-label">Pendampingan</span><div class="package-icon">🏆</div><h3>Intensive</h3><p class="package-subtitle">Pendampingan intensif untuk persiapan seminar atau sidang.</p><div class="package-price">Rp750K <small>mulai</small></div><p class="package-note">Berdasarkan kebutuhan</p><ul class="package-features"><li><span class="check">✓</span>Review menyeluruh dokumen</li><li><span class="check">✓</span>Checklist kesiapan seminar/sidang</li><li><span class="check">✓</span>Review slide presentasi</li><li><span class="check">✓</span>Simulasi pertanyaan & jawaban</li><li><span class="check">✓</span>Catatan revisi akhir</li><li><span class="check">✓</span>Follow-up sesuai kesepakatan</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Pendampingan%20Skripsi%20Intensive." target="_blank">Konsultasi</a></article></div></div><p class="package-disclaimer">*Harga merupakan harga mulai dan dapat berubah berdasarkan tingkat kesulitan, jumlah halaman, fitur, deadline, serta scope project. Untuk layanan skripsi, BROOTECH menyediakan pendampingan, review, formatting, proofreading, dan bantuan teknis—bukan pengganti tanggung jawab akademik mahasiswa.</p></div></section>
+
+<section class="section" id="perbandingan">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="badge">Bandingkan Paket</span>
+      <h2>Mana yang paling cocok?</h2>
+      <p>Perbandingan singkat paket website. Scope akhir tetap disesuaikan dengan kebutuhan project.</p>
+    </div>
+    <div class="comparison-wrap reveal">
+      <table class="comparison">
+        <thead><tr><th>Fitur</th><th>Starter</th><th class="featured-col">Professional</th><th>Custom</th></tr></thead>
+        <tbody>
+          <tr><td>Responsive</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Halaman</td><td>1–5</td><td>Hingga 10</td><td>Custom</td></tr>
+          <tr><td>Database</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Login / Role</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Dashboard</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Fitur Custom</td><td>Terbatas</td><td>Terbatas</td><td class="yes">✓</td></tr>
+          <tr><td>Revisi</td><td>2x</td><td>3x</td><td>Sesuai kesepakatan</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">Harga dan fitur dapat berubah mengikuti scope, tingkat kesulitan, dan deadline project.</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="cta reveal">
@@ -885,6 +1074,36 @@ footer li a:hover{color:var(--yellow)}
       </div>
       <a class="btn" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20belum%20tahu%20paket%20yang%20cocok.%20Saya%20ingin%20konsultasi." target="_blank">💬 Tanya Sekarang</a>
     </div>
+  </div>
+</section>
+
+
+<section class="section request-section" id="request">
+  <div class="container request-grid">
+    <div class="request-copy reveal">
+      <span class="badge">Request Project</span>
+      <h2>Punya project? Ceritakan ke kami.</h2>
+      <p>Isi kebutuhan singkat di samping. Setelah klik kirim, detailnya akan dibuka di WhatsApp BROOTECH untuk dilanjutkan ke tahap konsultasi.</p>
+      <ul class="request-points">
+        <li>✓ Tentukan kategori project</li>
+        <li>✓ Masukkan deadline dan estimasi budget</li>
+        <li>✓ Jelaskan fitur atau kebutuhan utama</li>
+        <li>✓ Langsung terhubung ke WhatsApp</li>
+      </ul>
+    </div>
+    <form class="request-form reveal" id="projectForm">
+      <div class="form-grid">
+        <div class="form-group"><label>Nama</label><input id="fName" required placeholder="Nama kamu"></div>
+        <div class="form-group"><label>No. WhatsApp</label><input id="fPhone" required placeholder="08xxxxxxxxxx"></div>
+        <div class="form-group"><label>Kategori</label><select id="fCategory"><option>Joki Website</option><option>Joki Desain</option><option>Pendampingan Skripsi</option></select></div>
+        <div class="form-group"><label>Deadline</label><input id="fDeadline" type="date"></div>
+        <div class="form-group"><label>Estimasi Budget</label><select id="fBudget"><option>Belum tahu</option><option>Di bawah Rp500K</option><option>Rp500K – Rp1,5JT</option><option>Di atas Rp1,5JT</option></select></div>
+        <div class="form-group"><label>Prioritas</label><select id="fPriority"><option>Normal</option><option>Mendesak</option></select></div>
+        <div class="form-group full"><label>Deskripsi Project</label><textarea id="fDetail" required placeholder="Contoh: Saya butuh website sekolah dengan login admin, data siswa, dan halaman informasi."></textarea></div>
+      </div>
+      <button class="btn btn-primary form-submit" type="submit">🚀 Kirim Request via WhatsApp</button>
+      <p class="form-help">Data tidak dikirim ke server. Form hanya menyusun pesan WhatsApp.</p>
+    </form>
   </div>
 </section>
 
@@ -975,6 +1194,35 @@ footer li a:hover{color:var(--yellow)}
 </a>
 
 <script>
+
+document.getElementById('projectForm')?.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  const name=document.getElementById('fName').value.trim();
+  const phone=document.getElementById('fPhone').value.trim();
+  const category=document.getElementById('fCategory').value;
+  const deadline=document.getElementById('fDeadline').value || 'Belum ditentukan';
+  const budget=document.getElementById('fBudget').value;
+  const priority=document.getElementById('fPriority').value;
+  const detail=document.getElementById('fDetail').value.trim();
+  const message=
+`Halo Brootech 👋
+
+Saya ingin konsultasi project.
+
+Nama: ${name}
+No. WhatsApp: ${phone}
+Kategori: ${category}
+Deadline: ${deadline}
+Budget: ${budget}
+Prioritas: ${priority}
+
+Detail project:
+${detail}
+
+Mohon info paket dan estimasinya. Terima kasih.`;
+  window.open('https://wa.me/6281374498547?text='+encodeURIComponent(message),'_blank');
+});
+
 const navbar=document.getElementById('navbar');
 window.addEventListener('scroll',()=>{
   navbar.classList.toggle('scrolled',window.scrollY>25);

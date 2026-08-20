@@ -474,6 +474,33 @@ button{font:inherit}
 .cta p{max-width:620px;color:#37475a;margin-top:10px;font-size:14px}
 .cta .btn{background:var(--navy);color:#fff}
 
+
+/* PRICING / PAKET */
+.pricing-section{background:linear-gradient(180deg,#f6f9fd,#edf4fb)}
+.pricing-tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:-15px auto 38px}
+.pricing-tab{border:1px solid var(--line);background:#fff;color:var(--navy);padding:10px 16px;border-radius:999px;font-size:12px;font-weight:900;cursor:pointer;transition:.2s}
+.pricing-tab.active,.pricing-tab:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.package-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow);transition:.3s;overflow:hidden}
+.package-card:hover{transform:translateY(-8px);box-shadow:0 30px 70px rgba(6,26,53,.15)}
+.package-card.featured{border:2px solid var(--yellow);box-shadow:0 25px 65px rgba(255,189,24,.17)}
+.package-ribbon{position:absolute;right:18px;top:18px;background:var(--yellow);color:var(--navy);padding:6px 9px;border-radius:7px;font-size:9px;font-weight:1000;letter-spacing:.7px;text-transform:uppercase}
+.package-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:#edf4fb;font-size:22px;margin-bottom:18px}
+.package-card h3{font-size:22px;margin-bottom:5px}
+.package-subtitle{color:#7a8999;font-size:12px;min-height:38px}
+.package-price{margin:20px 0 3px;font-size:30px;font-weight:1000;letter-spacing:-1px}
+.package-price small{font-size:11px;color:#8190a0;font-weight:700}
+.package-note{font-size:11px;color:#8997a7;margin-bottom:17px}
+.package-features{list-style:none;border-top:1px solid var(--line);padding-top:13px}
+.package-features li{display:flex;align-items:flex-start;gap:9px;padding:6px 0;color:#526579;font-size:12px}
+.package-features .check{margin-top:1px}
+.package-button{width:100%;margin-top:20px}
+.package-label{display:inline-block;margin-bottom:12px;color:var(--navy3);background:#edf4fb;padding:6px 9px;border-radius:7px;font-size:9px;font-weight:1000;letter-spacing:1px;text-transform:uppercase}
+.pricing-category{display:none}.pricing-category.active{display:block}
+.package-disclaimer{text-align:center;max-width:760px;margin:28px auto 0;color:#7a8999;font-size:11px}
+@media(max-width:950px){.package-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.package-grid{grid-template-columns:1fr}.pricing-tab{font-size:11px;padding:9px 13px}}
+
 /* FAQ */
 .faq{max-width:820px;margin:auto;display:grid;gap:12px}
 .faq-item{
@@ -634,6 +661,7 @@ footer li a:hover{color:var(--yellow)}
       <a href="#layanan">Layanan</a>
       <a href="#keunggulan">Keunggulan</a>
       <a href="#portfolio">Portofolio</a>
+      <a href="#paket">Paket Harga</a>
       <a href="#cara">Cara Pesan</a>
       <a href="#faq">FAQ</a>
     </div>
@@ -835,6 +863,19 @@ footer li a:hover{color:var(--yellow)}
   </div>
 </section>
 
+<section class="section pricing-section" id="paket"><div class="container"><div class="section-head reveal"><span class="badge">Paket BROOTECH</span><h2>Pilih paket yang sesuai kebutuhanmu.</h2><p>Harga di bawah adalah harga mulai. Fitur dan scope dapat disesuaikan setelah konsultasi.</p></div><div class="pricing-tabs"><button class="pricing-tab active" data-target="paket-website">💻 Website</button><button class="pricing-tab" data-target="paket-desain">🎨 Desain</button><button class="pricing-tab" data-target="paket-skripsi">🎓 Skripsi</button></div><div class="pricing-category active" id="paket-website">
+      <div class="section-head" style="margin-bottom:28px">
+        <span class="badge">💻 Website</span>
+        <p>Solusi website mulai dari landing page sederhana sampai sistem informasi dan website custom.</p>
+      </div><div class="package-grid"><article class="package-card reveal"><span class="package-label">Website</span><div class="package-icon">🚀</div><h3>Starter</h3><p class="package-subtitle">Landing page, portfolio, atau website sederhana.</p><div class="package-price">Rp500K <small>mulai</small></div><p class="package-note">Untuk project sederhana</p><ul class="package-features"><li><span class="check">✓</span>1–5 halaman</li><li><span class="check">✓</span>Responsive HP & laptop</li><li><span class="check">✓</span>Desain sesuai brief</li><li><span class="check">✓</span>Form kontak / WhatsApp</li><li><span class="check">✓</span>2x revisi</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Website%20Starter." target="_blank">Pilih Paket</a></article><article class="package-card featured reveal"><span class="package-ribbon">Paling Populer</span><span class="package-label">Website</span><div class="package-icon">⚡</div><h3>Professional</h3><p class="package-subtitle">Bisnis, sekolah, organisasi, dan project yang lebih lengkap.</p><div class="package-price">Rp1,5JT <small>mulai</small></div><p class="package-note">Pilihan favorit untuk project custom</p><ul class="package-features"><li><span class="check">✓</span>Hingga 10 halaman</li><li><span class="check">✓</span>Responsive & modern UI</li><li><span class="check">✓</span>Database / fitur dinamis</li><li><span class="check">✓</span>Dashboard sesuai kebutuhan</li><li><span class="check">✓</span>Login / role pengguna</li><li><span class="check">✓</span>3x revisi</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Website%20Professional." target="_blank">Pilih Paket</a></article><article class="package-card reveal"><span class="package-label">Website</span><div class="package-icon">💎</div><h3>Custom</h3><p class="package-subtitle">Sistem informasi, e-commerce, dashboard, dan project kompleks.</p><div class="package-price">Custom</div><p class="package-note">Harga berdasarkan fitur & scope</p><ul class="package-features"><li><span class="check">✓</span>Fitur custom sesuai brief</li><li><span class="check">✓</span>Database & autentikasi</li><li><span class="check">✓</span>Multi-role / admin</li><li><span class="check">✓</span>Laporan / export data</li><li><span class="check">✓</span>Integrasi API bila diperlukan</li><li><span class="check">✓</span>Revisi sesuai kesepakatan</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20ingin%20konsultasi%20paket%20Website%20Custom." target="_blank">Konsultasi</a></article></div></div><div class="pricing-category" id="paket-desain">
+      <div class="section-head" style="margin-bottom:28px">
+        <span class="badge">🎨 Desain</span>
+        <p>Pilihan desain untuk kebutuhan tugas, promosi, branding, presentasi, dan media sosial.</p>
+      </div><div class="package-grid"><article class="package-card reveal"><span class="package-label">Desain</span><div class="package-icon">🎨</div><h3>Basic Design</h3><p class="package-subtitle">Untuk kebutuhan desain sederhana dan cepat.</p><div class="package-price">Rp50K <small>mulai</small></div><p class="package-note">Per desain / sesuai brief</p><ul class="package-features"><li><span class="check">✓</span>1 desain</li><li><span class="check">✓</span>Ukuran sesuai kebutuhan</li><li><span class="check">✓</span>File JPG / PNG</li><li><span class="check">✓</span>2x revisi</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Basic%20Design." target="_blank">Pilih Paket</a></article><article class="package-card featured reveal"><span class="package-ribbon">Rekomendasi</span><span class="package-label">Desain</span><div class="package-icon">✨</div><h3>Professional Design</h3><p class="package-subtitle">Branding, presentasi, promosi, dan visual lebih serius.</p><div class="package-price">Rp150K <small>mulai</small></div><p class="package-note">Bisa custom sesuai jumlah desain</p><ul class="package-features"><li><span class="check">✓</span>3–5 desain</li><li><span class="check">✓</span>Konsep visual konsisten</li><li><span class="check">✓</span>File JPG / PNG / PDF</li><li><span class="check">✓</span>Source file sesuai kesepakatan</li><li><span class="check">✓</span>3x revisi</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Professional%20Design." target="_blank">Pilih Paket</a></article><article class="package-card reveal"><span class="package-label">Desain</span><div class="package-icon">👑</div><h3>Branding Kit</h3><p class="package-subtitle">Identitas visual untuk personal brand, usaha, atau organisasi.</p><div class="package-price">Rp350K <small>mulai</small></div><p class="package-note">Menyesuaikan kebutuhan branding</p><ul class="package-features"><li><span class="check">✓</span>Logo</li><li><span class="check">✓</span>Palet warna & tipografi</li><li><span class="check">✓</span>Template media sosial</li><li><span class="check">✓</span>Brand guideline sederhana</li><li><span class="check">✓</span>File final siap pakai</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Branding%20Kit." target="_blank">Konsultasi</a></article></div></div><div class="pricing-category" id="paket-skripsi">
+      <div class="section-head" style="margin-bottom:28px">
+        <span class="badge">🎓 Skripsi</span>
+        <p>Pendampingan, review, formatting, proofreading, dan persiapan seminar atau sidang.</p>
+      </div><div class="package-grid"><article class="package-card reveal"><span class="package-label">Pendampingan</span><div class="package-icon">📘</div><h3>Basic</h3><p class="package-subtitle">Review dan arahan dasar untuk mahasiswa.</p><div class="package-price">Rp150K <small>mulai</small></div><p class="package-note">Per sesi / sesuai scope</p><ul class="package-features"><li><span class="check">✓</span>Konsultasi topik & struktur</li><li><span class="check">✓</span>Review dokumen</li><li><span class="check">✓</span>Catatan perbaikan</li><li><span class="check">✓</span>Formatting dasar</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Pendampingan%20Skripsi%20Basic." target="_blank">Pilih Paket</a></article><article class="package-card featured reveal"><span class="package-ribbon">Paling Dipilih</span><span class="package-label">Pendampingan</span><div class="package-icon">🎓</div><h3>Professional</h3><p class="package-subtitle">Pendampingan proposal sampai penyempurnaan bab.</p><div class="package-price">Rp400K <small>mulai</small></div><p class="package-note">Menyesuaikan jumlah bab & scope</p><ul class="package-features"><li><span class="check">✓</span>Review proposal / bab skripsi</li><li><span class="check">✓</span>Struktur & konsistensi penulisan</li><li><span class="check">✓</span>Formatting sesuai pedoman</li><li><span class="check">✓</span>Proofreading & parafrase</li><li><span class="check">✓</span>Review daftar pustaka</li><li><span class="check">✓</span>Revisi sesuai kesepakatan</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Pendampingan%20Skripsi%20Professional." target="_blank">Pilih Paket</a></article><article class="package-card reveal"><span class="package-label">Pendampingan</span><div class="package-icon">🏆</div><h3>Intensive</h3><p class="package-subtitle">Pendampingan intensif untuk persiapan seminar atau sidang.</p><div class="package-price">Rp750K <small>mulai</small></div><p class="package-note">Berdasarkan kebutuhan</p><ul class="package-features"><li><span class="check">✓</span>Review menyeluruh dokumen</li><li><span class="check">✓</span>Checklist kesiapan seminar/sidang</li><li><span class="check">✓</span>Review slide presentasi</li><li><span class="check">✓</span>Simulasi pertanyaan & jawaban</li><li><span class="check">✓</span>Catatan revisi akhir</li><li><span class="check">✓</span>Follow-up sesuai kesepakatan</li></ul><a class="btn btn-primary package-button" href="https://wa.me/6281374498547?text=Halo%20Brootech%2C%20saya%20tertarik%20paket%20Pendampingan%20Skripsi%20Intensive." target="_blank">Konsultasi</a></article></div></div><p class="package-disclaimer">*Harga merupakan harga mulai dan dapat berubah berdasarkan tingkat kesulitan, jumlah halaman, fitur, deadline, serta scope project. Untuk layanan skripsi, BROOTECH menyediakan pendampingan, review, formatting, proofreading, dan bantuan teknis—bukan pengganti tanggung jawab akademik mahasiswa.</p></div></section>
 <section class="section">
   <div class="container">
     <div class="cta reveal">
@@ -961,6 +1002,8 @@ document.querySelectorAll('.faq-q').forEach(button=>{
     }
   });
 });
+
+document.querySelectorAll('.pricing-tab').forEach(tab=>{tab.addEventListener('click',()=>{document.querySelectorAll('.pricing-tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.pricing-category').forEach(x=>x.classList.remove('active'));tab.classList.add('active');const target=document.getElementById(tab.dataset.target);if(target)target.classList.add('active');});});
 
 const menuBtn=document.getElementById('menuBtn');
 menuBtn.addEventListener('click',()=>{
